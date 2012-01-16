@@ -1,0 +1,18 @@
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  out = log @{u}..
+  logt = log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"
+[user]
+  name = Hanna Kalinowska
+  email = myemail@example.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = /usr/bin/vim
+[push]
+  default = tracking
