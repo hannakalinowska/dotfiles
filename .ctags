@@ -1,0 +1,2 @@
+--regex-ruby=/describe ["'](.+)["']/\1/d,definition/
+--regex-ruby=/(Given|When|Then) \/\^?(.+)\$?\/\1 \2/
