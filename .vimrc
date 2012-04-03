@@ -24,6 +24,46 @@ set backspace=indent,eol,start
 " ustawia wielkość tabulacji na X
 set expandtab ts=2 sw=2
 
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'mileszs/ack.vim'
+Bundle 'corntrace/bufexplorer'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Raimondi/delimitMate'
+Bundle 'sjl/gundo.vim'
+Bundle 'hallettj/jslint.vim'
+Bundle 'matchit.zip'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'msanders/snipmate.vim'
+Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
+Bundle 'godlygeek/tabular'
+Bundle 'taglist.vim'
+Bundle 'tpope/vim-abolish'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-cucumber'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'pangloss/vim-javascript'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'git://github.com/jeroenp/vim-xquery-syntax.git'
+Bundle 'mudge/runspec.vim'
+
+
+
 " włącza numerowanie wierszy
 " set number
 
@@ -39,8 +79,6 @@ set incsearch		" do incremental searching
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
-
-call pathogen#runtime_append_all_bundles()
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
