@@ -196,10 +196,13 @@ nnoremap <leader>f :CommandTFlush<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <C-t> :CommandT<CR>
 nnoremap <leader>a :Ack!
-nnoremap <leader>af :AckFromSearch
-xnoremap <leader>t :Tabularize /<Bar>/<CR>
+nnoremap <leader>aa :AckFromSearch
+
+noremap <C-a> ^
+noremap <C-e> $
 
 " split windows changes
+set splitright splitbelow
 " (vertical -> horizontal, horizontal -> vertical)
 nnoremap <leader>vh <C-w>t<C-w>K
 nnoremap <leader>hv <C-w>t<C-w>H
@@ -212,10 +215,21 @@ nnoremap <leader>z nzf%
 
 " syntax highlighting for .feature files
 au Bufread,BufNewFile *.feature set filetype=cucumber
+au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
+
+" Toggle between relative and absolute line numbers
+nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
+function! ToggleRelativeAbsoluteNumber()
+  if &number
+    set relativenumber
+  else
+    set number
+  endif
+endfunction
 
 " Command-T settings
 set wildignore+=.hg/**,.git/**,external/**,log/**,tmp/**,.*.swp,*.jpg,*.gif,*.png
-set wildignore+=*.fdt,*.fdx,*.fnm,*.frq,*.nrm,*.prx,*.tii,*.tis " solr data files
+set wildignore+=solr/data/**,solr/conf/**,*.fdt,*.fdx,*.fnm,*.frq,*.nrm,*.prx,*.tii,*.tis " solr data files
 set wildignore+=public/naturejobs/**,public/science/** " naturejobs asset symlinks
 
 
@@ -223,6 +237,11 @@ set wildignore+=public/naturejobs/**,public/science/** " naturejobs asset symlin
 "nmap w <Plug>CamelCaseMotion_w
 "nmap b <Plug>CamelCaseMotion_b
 "nmap e <Plug>CamelCaseMotion_e
+
+" use the system clipboard
+"if has("clipboard")
+"  set clipboard=unnamed
+"endif
 
 " show whitespace characters
 set listchars=tab:>-,trail:·,extends:>,precedes:<
@@ -237,6 +256,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set autoindent
+
+" highlight current line
+set cursorline
 
 " remap <F1>
 map <F1> <Esc>
