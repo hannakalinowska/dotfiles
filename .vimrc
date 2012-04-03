@@ -192,7 +192,6 @@ nmap <leader>x <Plug>ToggleAutoCloseMappings
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
 
-nnoremap <leader>r :.Rake<CR>
 nnoremap <leader>f :CommandTFlush<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <C-t> :CommandT<CR>
@@ -248,3 +247,23 @@ map <S-Enter> o<Esc>
 nnoremap <leader>b :BufExplorer<CR>
 
 cd ~/github/jobs
+
+function! RunSpec()
+  let current_file = expand('%')
+  write
+
+  if match(current_file, '_spec\.rb$') != -1
+    exec ':!bundle exec spec ' . current_file
+  else
+    let spec_file = substitute(current_file, '\.rb$', '_spec.rb', '')
+
+    " Remove app/ for Rails apps.
+    if match(current_file, '^app/') != -1
+      let spec_file = substitute(spec_file, '^app/', '', '')
+    endif
+
+    exec ':!bundle exec spec --no-color spec/' . spec_file
+  endif
+endfunction
+nmap <leader>R :call RunSpec()<CR>
+nmap <leader>r :exe "!bundle exec spec %\:" . line(".")<cr>
