@@ -1,2 +1,5 @@
 --regex-ruby=/describe ["'](.+)["']/\1/d,definition/
---regex-ruby=/(Given|When|Then) \/\^?(.+)\$?\/\1 \2/
+--regex-ruby=/(Given|When|Then) \/\^?(.+)\$?\/\1 \2/f,function/
+--langdef=cucumber
+--langmap=cucumber:.feature
+--regex-cucumber=/Scenario: (.+)/\1/d,definition/
