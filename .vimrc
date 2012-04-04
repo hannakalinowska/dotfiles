@@ -5,9 +5,6 @@
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" ustawia wielkość tabulacji na X
-set expandtab ts=2 sw=2
-
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -182,12 +179,6 @@ set list
 set laststatus=2 "always show status bar
 
 set linespace=4
-
-"indent settings
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set autoindent
 
 " highlight current line
 set cursorline
