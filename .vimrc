@@ -109,9 +109,13 @@ set number
 let mapleader = ","
 
 nnoremap <leader><Space> :noh<CR>
+
 " nicer font
-"set gfn=Inconsolata\ 12
-set gfn=Monaco:h13
+if has("gui_macvim")
+  set guifont=Monaco:h13
+else
+  set guifont=Inconsolata\ 12
+endif
 
 " remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
