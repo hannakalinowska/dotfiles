@@ -140,7 +140,7 @@ nnoremap <leader>f :CommandTFlush<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <C-t> :CommandT<CR>
 nnoremap <leader>a :Ack!
-nnoremap <leader>aa :AckFromSearch
+nnoremap <leader>aa :AckFromSearch!
 
 noremap <C-a> ^
 noremap <C-e> $
@@ -155,7 +155,7 @@ nnoremap <leader>hv <C-w>t<C-w>H
 nnoremap <leader>g :GundoToggle<CR>
 
 " fold block - works best with matchit plugin
-nnoremap <leader>z nzf%
+nnoremap <leader>z zf%
 
 " syntax highlighting for .feature files
 au Bufread,BufNewFile *.feature set filetype=cucumber
