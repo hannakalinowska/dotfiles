@@ -94,10 +94,6 @@ else
   set autoindent		" always set autoindenting on
 endif " has("autocmd")
 
-
-" previous tab
-map gv :tabp<CR>
-
 " set tabs to 2 spaces
 set tabstop=2
 set smarttab
