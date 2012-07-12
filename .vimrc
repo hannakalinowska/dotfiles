@@ -147,6 +147,11 @@ set splitright splitbelow
 nnoremap <leader>vh <C-w>t<C-w>K
 nnoremap <leader>hv <C-w>t<C-w>H
 
+" maximise current split window
+nnoremap <leader>WM <C-w>_<C-w><Bar>
+" make windows evenly spaced
+nnoremap <leader>wm <C-w>=
+
 " Gundo
 nnoremap <leader>g :GundoToggle<CR>
 
