@@ -190,6 +190,12 @@ set cursorline
 map <F1> <Esc>
 imap <F1> <Esc>
 
+" remove right and left scrollbars
+set guioptions-=r
+set guioptions-=L
+" remove menu
+set guioptions-=T
+
 " random useful remaps
 map <S-Enter> o<Esc>
 nnoremap <leader>b :BufExplorer<CR>
