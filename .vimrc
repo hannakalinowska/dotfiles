@@ -61,6 +61,7 @@ endif
 
 colorscheme railscasts
 set enc=utf-8
+set term=ansi " make numpad work in terminal in OSX
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
