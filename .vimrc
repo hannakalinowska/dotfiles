@@ -39,6 +39,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'git://github.com/jeroenp/vim-xquery-syntax.git'
+Bundle 'git://github.com/puppetlabs/puppet-syntax-vim.git'
 Bundle 'mudge/runspec.vim'
 
 if has("vms")
