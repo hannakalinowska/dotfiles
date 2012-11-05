@@ -5,6 +5,7 @@ cp "$path/.ackrc" ~/.ackrc
 #ln -s "$path/.ackrc" ~/.ackrc
 cp "$path/.ctags" ~/.ctags
 #ln -s "$path/.ctags" ~/.ctags
+cp "$path/.inputrc" ~/.inputrc
 
 ln -s "$path/.gitconfig" ~/.gitconfig
 ln -s "$path/.gitignore" ~/.gitignore
