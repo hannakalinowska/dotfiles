@@ -42,6 +42,7 @@ Bundle 'git://github.com/jeroenp/vim-xquery-syntax.git'
 Bundle 'git://github.com/puppetlabs/puppet-syntax-vim.git'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'vim-scala'
 Bundle 'mudge/runspec.vim'
 
 if has("vms")
