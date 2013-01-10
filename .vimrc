@@ -202,6 +202,15 @@ set guioptions-=T
 map <S-Enter> o<Esc>
 nnoremap <leader>b :BufExplorer<CR>
 
+" remap %% to be the path to the current file
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" window movements
+map <leader><Up> <C-w><Up>
+map <leader><Down> <C-w><Down>
+map <leader><Left> <C-w><Left>
+map <leader><Right> <C-w><Right>
+
 function! RunSpec()
   let current_file = expand('%')
   write
