@@ -40,6 +40,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'git://github.com/jeroenp/vim-xquery-syntax.git'
 Bundle 'git://github.com/puppetlabs/puppet-syntax-vim.git'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'mudge/runspec.vim'
 
 if has("vms")
@@ -205,11 +207,17 @@ nnoremap <leader>b :BufExplorer<CR>
 " remap %% to be the path to the current file
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+set wildmenu
+
 " window movements
 map <leader><Up> <C-w><Up>
 map <leader><Down> <C-w><Down>
 map <leader><Left> <C-w><Left>
 map <leader><Right> <C-w><Right>
+map <leader>k <C-w><Up>
+map <leader>j <C-w><Down>
+map <leader>h <C-w><Left>
+map <leader>l <C-w><Right>
 
 function! RunSpec()
   let current_file = expand('%')
