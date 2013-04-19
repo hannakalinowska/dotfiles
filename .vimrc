@@ -165,6 +165,7 @@ nnoremap <leader>z zf%
 " syntax highlighting for .feature files
 au Bufread,BufNewFile *.feature set filetype=cucumber
 au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
+au BufRead,BufNewFile *.pp set filetype=puppet
 
 " Toggle between relative and absolute line numbers
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
