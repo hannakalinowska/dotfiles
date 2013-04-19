@@ -39,10 +39,11 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'git://github.com/jeroenp/vim-xquery-syntax.git'
-Bundle 'git://github.com/puppetlabs/puppet-syntax-vim.git'
+Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'vim-scala'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'mudge/runspec.vim'
 
 if has("vms")
@@ -220,22 +221,5 @@ map <leader>j <C-w><Down>
 map <leader>h <C-w><Left>
 map <leader>l <C-w><Right>
 
-function! RunSpec()
-  let current_file = expand('%')
-  write
-
-  if match(current_file, '_spec\.rb$') != -1
-    exec ':!bundle exec spec ' . current_file
-  else
-    let spec_file = substitute(current_file, '\.rb$', '_spec.rb', '')
-
-    " Remove app/ for Rails apps.
-    if match(current_file, '^app/') != -1
-      let spec_file = substitute(spec_file, '^app/', '', '')
-    endif
-
-    exec ':!bundle exec spec --no-color spec/' . spec_file
-  endif
-endfunction
-nmap <leader>R :call RunSpec()<CR>
-nmap <leader>r :exe "!bundle exec spec %\:" . line(".")<cr>
+" syntastic ruby
+let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
