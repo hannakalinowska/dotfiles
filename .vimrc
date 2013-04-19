@@ -203,6 +203,8 @@ set guioptions-=L
 " remove menu
 set guioptions-=T
 
+set wildmenu
+
 " random useful remaps
 map <S-Enter> o<Esc>
 nnoremap <leader>b :BufExplorer<CR>
