@@ -64,7 +64,10 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-colorscheme railscasts
+syntax enable
+set background=dark
+colorscheme solarized
+
 set enc=utf-8
 set term=ansi " make numpad work in terminal in OSX
 
