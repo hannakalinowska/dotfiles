@@ -45,6 +45,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'vim-scala'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'mudge/runspec.vim'
+Bundle 'tpope/vim-dispatch'
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
