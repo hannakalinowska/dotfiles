@@ -65,11 +65,13 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
+set t_Co=256                        " force vim to use 256 colors
+let g:solarized_termcolors=256      " use solarized 256 fallback
 
 set enc=utf-8
-set term=ansi " make numpad work in terminal in OSX
+"set term=ansi " make numpad work in terminal in OSX
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
