@@ -45,6 +45,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'vim-scala'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'mudge/runspec.vim'
+Bundle 'jimmyhchan/dustjs.vim'
 Bundle 'tpope/vim-dispatch'
 
 if has("vms")
@@ -73,6 +74,7 @@ let g:solarized_termcolors=256      " use solarized 256 fallback
 
 set enc=utf-8
 "set term=ansi " make numpad work in terminal in OSX
+set term=xterm-256color
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
