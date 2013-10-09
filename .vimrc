@@ -189,6 +189,7 @@ endfunction
 set wildignore+=.hg/**,.git/**,external/**,log/**,tmp/**,.*.swp,*.jpg,*.gif,*.png
 set wildignore+=solr/data/**,solr/conf/**,*.fdt,*.fdx,*.fnm,*.frq,*.nrm,*.prx,*.tii,*.tis " solr data files
 set wildignore+=public/naturejobs/**,public/science/** " naturejobs asset symlinks
+set wildignore+=*.obo,*.nt
 
 " show whitespace characters
 set listchars=tab:>-,trail:·,extends:>,precedes:<
