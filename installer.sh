@@ -13,5 +13,6 @@ ln -s "$path/.gitignore" ~/.gitignore
 ln -s "$path/.gvimrc" ~/.gvimrc
 ln -s "$path/.vimrc" ~/.vimrc
 ln -s "$path/.tmux.conf" ~/.tmux.conf
+ln -s "$path/.tmuxinator" ~/.tmuxinator
 
 ln -s "$path/.vim/snippets" ~/.vim/snippets
