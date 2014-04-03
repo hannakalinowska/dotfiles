@@ -190,6 +190,8 @@ set wildignore+=.hg/**,.git/**,external/**,log/**,tmp/**,.*.swp,*.jpg,*.gif,*.pn
 set wildignore+=solr/data/**,solr/conf/**,*.fdt,*.fdx,*.fnm,*.frq,*.nrm,*.prx,*.tii,*.tis " solr data files
 set wildignore+=public/naturejobs/**,public/science/** " naturejobs asset symlinks
 set wildignore+=*.obo,*.nt
+set wildignore+=vcr_cassettes/**
+set wildignore+=coverage/**
 
 " show whitespace characters
 set listchars=tab:>-,trail:·,extends:>,precedes:<
