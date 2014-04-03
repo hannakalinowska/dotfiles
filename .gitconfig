@@ -1,5 +1,5 @@
 [alias]
-  st = status
+  st = status -sb
   co = checkout
   br = branch
   out = log @{u}..
