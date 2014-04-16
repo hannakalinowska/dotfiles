@@ -138,9 +138,6 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
 nnoremap <C-c> :<C-u>Tlist<CR>
 
-" autoclose
-nmap <leader>x <Plug>ToggleAutoCloseMappings
-
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
 
@@ -203,6 +200,7 @@ set linespace=4
 
 " highlight current line
 set cursorline
+set colorcolumn=80
 
 " remap <F1>
 map <F1> <Esc>
@@ -222,8 +220,6 @@ nnoremap <leader>b :BufExplorer<CR>
 
 " remap %% to be the path to the current file
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-
-set wildmenu
 
 " window movements
 map <leader><Up> <C-w><Up>
