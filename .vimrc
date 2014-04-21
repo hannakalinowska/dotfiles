@@ -235,5 +235,10 @@ map <leader>l <C-w><Right>
 " startify
 let g:startify_change_to_dir = 0
 let g:startify_list_order = ['dir', 'bookmarks', 'sessions']
+
+nmap <leader>e :Explore
+nmap <leader>v :Vexplore
+nmap <leader>s :Sexplore
+
 " syntastic ruby
 let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
