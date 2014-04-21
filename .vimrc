@@ -36,6 +36,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-tbone'
+Bundle 'mhinz/vim-startify'
 
 " Syntax plugins
 Bundle 'pangloss/vim-javascript'
@@ -231,5 +232,8 @@ map <leader>j <C-w><Down>
 map <leader>h <C-w><Left>
 map <leader>l <C-w><Right>
 
+" startify
+let g:startify_change_to_dir = 0
+let g:startify_list_order = ['dir', 'bookmarks', 'sessions']
 " syntastic ruby
 let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
