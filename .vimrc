@@ -158,10 +158,13 @@ nnoremap <leader>g :GundoToggle<CR>
 " fold block - works best with matchit plugin
 nnoremap <leader>z zf%
 
-" syntax highlighting for .feature files
+" syntax highlighting
 au Bufread,BufNewFile *.feature set filetype=cucumber
 au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
 au BufRead,BufNewFile *.pp set filetype=puppet
+au BufRead,BufNewFile *.json set filetype=javascript
+
+au BufRead,BufNewFile */shunter-laserwolf/*,*/shunter-proxy/* set noexpandtab
 
 " Toggle between relative and absolute line numbers
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
