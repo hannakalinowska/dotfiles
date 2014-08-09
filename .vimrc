@@ -37,6 +37,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-tbone'
 Bundle 'mhinz/vim-startify'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " Syntax plugins
 Bundle 'pangloss/vim-javascript'
@@ -209,25 +210,21 @@ set guioptions-=T
 set wildmenu
 
 " random useful remaps
-map <S-Enter> o<Esc>
+nmap <S-Enter> o<Esc>
 nnoremap <leader>b :BufExplorer<CR>
 
 " remap %% to be the path to the current file
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " window movements
-map <leader><Up> <C-w><Up>
-map <leader><Down> <C-w><Down>
-map <leader><Left> <C-w><Left>
-map <leader><Right> <C-w><Right>
-map <leader>k <C-w><Up>
-map <leader>j <C-w><Down>
-map <leader>h <C-w><Left>
-map <leader>l <C-w><Right>
-
-" startify
-let g:startify_change_to_dir = 0
-let g:startify_list_order = ['dir', 'bookmarks', 'sessions']
+map <leader><Up> :TmuxNavigateUp<CR>
+map <leader><Down> :TmuxNavigateDown<CR>
+map <leader><Left> :TmuxNavigateLeft<CR>
+map <leader><Right> :TmuxNavigateRight<CR>
+map <leader>k :TmuxNavigateUp<CR>
+map <leader>j :TmuxNavigateDown<CR>
+map <leader>h :TmuxNavigateLeft<CR>
+map <leader>l :TmuxNavigateRigh<CRt>
 
 nmap <leader>e :Explore
 nmap <leader>v :Vexplore
