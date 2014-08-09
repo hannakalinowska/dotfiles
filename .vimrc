@@ -13,7 +13,6 @@ Bundle 'gmarik/vundle'
 
 Bundle 'mileszs/ack.vim'
 Bundle 'corntrace/bufexplorer'
-Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Raimondi/delimitMate'
 Bundle 'sjl/gundo.vim'
 Bundle 'matchit.zip'
@@ -36,7 +35,6 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'nelstrom/vim-visual-star-search'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-tbone'
-Bundle 'mhinz/vim-startify'
 Bundle 'christoomey/vim-tmux-navigator'
 
 " Syntax plugins
