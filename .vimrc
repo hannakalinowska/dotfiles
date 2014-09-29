@@ -161,6 +161,7 @@ nnoremap <leader>z zf%
 au Bufread,BufNewFile *.feature set filetype=cucumber
 au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
 au BufRead,BufNewFile *.pp set filetype=puppet
+au BufRead */puppet-modules/*/nodes.pp.npgutil set filetype=puppet
 au BufRead,BufNewFile *.json set filetype=javascript
 
 au BufRead,BufNewFile */shunter-laserwolf/*,*/shunter-proxy/* set noexpandtab
