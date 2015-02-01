@@ -21,3 +21,8 @@ clean:
 	rm -f ~/.inputrc
 	rm -f ~/.ctags
 	rm -f ~/.ackrc
+
+vimsetup:
+	mkdir -p ~/.vim/bundle
+	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	vim +PluginInstall +qall
