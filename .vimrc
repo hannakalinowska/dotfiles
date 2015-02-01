@@ -6,47 +6,49 @@
 set backspace=indent,eol,start
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'mileszs/ack.vim'
-Bundle 'corntrace/bufexplorer'
-Bundle 'Raimondi/delimitMate'
-Bundle 'sjl/gundo.vim'
-Bundle 'matchit.zip'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'msanders/snipmate.vim'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'godlygeek/tabular'
-Bundle 'tpope/vim-abolish'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'nelstrom/vim-visual-star-search'
-Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-tbone'
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'mileszs/ack.vim'
+Plugin 'corntrace/bufexplorer'
+Plugin 'Raimondi/delimitMate'
+Plugin 'sjl/gundo.vim'
+Plugin 'matchit.zip'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'msanders/snipmate.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-abolish'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-tbone'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Syntax plugins
-Bundle 'pangloss/vim-javascript'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-haml'
-Bundle 'puppetlabs/puppet-syntax-vim'
-Bundle 'jeroenp/vim-xquery-syntax'
-Bundle 'vim-scala'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'jimmyhchan/dustjs.vim'
-Bundle 'tpope/vim-jdaddy'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-haml'
+Plugin 'puppetlabs/puppet-syntax-vim'
+Plugin 'jeroenp/vim-xquery-syntax'
+Plugin 'vim-scala'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'jimmyhchan/dustjs.vim'
+Plugin 'tpope/vim-jdaddy'
+
+call vundle#end()
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
