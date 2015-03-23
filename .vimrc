@@ -134,9 +134,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
 
-nnoremap <leader>f :CommandTFlush<CR>
 nnoremap <leader>gb :Gblame<CR>
-nnoremap <C-t> :CommandT<CR>
 nnoremap <leader>a :Ack!
 nnoremap <leader>aa :AckFromSearch!
 
