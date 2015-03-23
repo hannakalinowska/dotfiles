@@ -158,6 +158,9 @@ nnoremap <leader>g :GundoToggle<CR>
 " fold block - works best with matchit plugin
 nnoremap <leader>z zf%
 
+" no sudo fix
+cnoremap w!! %!sudo tee > /dev/null %
+
 " syntax highlighting
 au Bufread,BufNewFile *.feature set filetype=cucumber
 au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
