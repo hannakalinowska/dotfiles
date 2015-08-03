@@ -15,4 +15,4 @@
   excludesfile = ~/.gitignore
   editor = /usr/bin/vim
 [push]
-  default = tracking
+  default = simple
