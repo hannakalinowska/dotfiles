@@ -36,7 +36,8 @@ Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-tbone'
 Plugin 'christoomey/vim-tmux-navigator'
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Syntax plugins
 Plugin 'pangloss/vim-javascript'
