@@ -234,7 +234,7 @@ nmap <leader>e :Explore
 nmap <leader>v :Vexplore
 nmap <leader>s :Sexplore
 
-nmap <F8> :TagbarToggle<CR>
+nmap <leader>t :TagbarToggle<CR>
 
 " syntastic ruby
 let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
