@@ -212,6 +212,7 @@ set guioptions-=L
 " remove menu
 set guioptions-=T
 
+set wildmode=longest,list,full
 set wildmenu
 
 " random useful remaps
