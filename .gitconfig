@@ -6,13 +6,17 @@
   logt = log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"
 [user]
   name = Hanna Kalinowska
-  email = myemail@example.com
+  email = hanna.kalinowska@simplybusiness.co.uk
 [color]
   diff = auto
   status = auto
   branch = auto
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/hkalinow/.global_ignore
   editor = /usr/bin/vim
 [push]
   default = simple
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f

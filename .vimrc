@@ -49,6 +49,7 @@ Plugin 'vim-scala'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'jimmyhchan/dustjs.vim'
 Plugin 'tpope/vim-jdaddy'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
