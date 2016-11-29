@@ -239,4 +239,4 @@ nmap <leader>s :Sexplore
 nmap <leader>t :TagbarToggle<CR>
 
 " syntastic ruby
-let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
+let g:syntastic_ruby_exec = '~/.rbenv/versions/2.2.3/bin/ruby'
