@@ -1,5 +1,6 @@
 install:
 	cp "$(CURDIR)/.ackrc" ~/.ackrc
+	cp "$(CURDIR)/.bashrc" ~/.bashrc
 	cp "$(CURDIR)/.ctags" ~/.ctags
 	cp "$(CURDIR)/.inputrc" ~/.inputrc
 	ln -s "$(CURDIR)/.gitconfig" ~/.gitconfig
@@ -20,6 +21,7 @@ clean:
 	rm -f ~/.gitconfig
 	rm -f ~/.inputrc
 	rm -f ~/.ctags
+	rm -f ~/.bashrc
 	rm -f ~/.ackrc
 
 vimsetup:
