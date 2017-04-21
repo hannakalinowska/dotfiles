@@ -50,14 +50,15 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'jimmyhchan/dustjs.vim'
 Plugin 'tpope/vim-jdaddy'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
+set nobackup                      " Don’t make a backup before overwriting a file.
+set nowritebackup                 " And again.
+set noswapfile
+
+set visualbell " no beeping
 
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
@@ -76,6 +77,9 @@ set background=light
 colorscheme solarized
 set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
+
+"let base16colorspace=256
+"colorscheme base16-bright
 
 set enc=utf-8
 "set term=ansi " make numpad work in terminal in OSX
@@ -240,3 +244,5 @@ nmap <leader>t :TagbarToggle<CR>
 
 " syntastic ruby
 let g:syntastic_ruby_exec = '~/.rbenv/versions/2.2.3/bin/ruby'
+
+set path+=**
