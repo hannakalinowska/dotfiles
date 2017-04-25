@@ -26,7 +26,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
@@ -38,6 +38,9 @@ Plugin 'tpope/vim-tbone'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mtth/scratch.vim'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'rhysd/clever-f.vim'
 
 " Syntax plugins
 Plugin 'pangloss/vim-javascript'
@@ -50,7 +53,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'jimmyhchan/dustjs.vim'
 Plugin 'tpope/vim-jdaddy'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'chriskempson/base16-vim'
+
 
 call vundle#end()
 
@@ -74,15 +77,10 @@ endif
 
 syntax enable
 set background=light
-colorscheme solarized
+colorscheme Tomorrow
 set t_Co=256                        " force vim to use 256 colors
-let g:solarized_termcolors=256      " use solarized 256 fallback
-
-"let base16colorspace=256
-"colorscheme base16-bright
 
 set enc=utf-8
-"set term=ansi " make numpad work in terminal in OSX
 set term=xterm-256color
 
 " Only do this part when compiled with support for autocommands.
@@ -121,7 +119,6 @@ set smarttab
 set shiftwidth=2
 set expandtab
 
-set nobackup
 set number
 let mapleader = ","
 
@@ -171,7 +168,6 @@ cnoremap w!! %!sudo tee > /dev/null %
 au Bufread,BufNewFile *.feature set filetype=cucumber
 au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
 au BufRead,BufNewFile *.pp set filetype=puppet
-au BufRead */puppet-modules/*/nodes.pp.npgutil set filetype=puppet
 au BufRead,BufNewFile *.json set filetype=javascript
 
 au BufRead,BufNewFile */shunter-laserwolf/*,*/shunter-proxy/* set noexpandtab
@@ -189,8 +185,6 @@ endfunction
 " Command-T settings
 set wildignore+=.hg/**,.git/**,external/**,log/**,tmp/**,.*.swp,*.jpg,*.gif,*.png
 set wildignore+=solr/data/**,solr/conf/**,*.fdt,*.fdx,*.fnm,*.frq,*.nrm,*.prx,*.tii,*.tis " solr data files
-set wildignore+=public/naturejobs/**,public/science/** " naturejobs asset symlinks
-set wildignore+=*.obo,*.nt
 set wildignore+=vcr_cassettes/**
 set wildignore+=coverage/**
 
