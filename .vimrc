@@ -18,7 +18,6 @@ Plugin 'sjl/gundo.vim'
 Plugin 'matchit.zip'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'msanders/snipmate.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
@@ -41,6 +40,12 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mtth/scratch.vim'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'rhysd/clever-f.vim'
+
+" the entire snipmate lot
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 " Syntax plugins
 Plugin 'pangloss/vim-javascript'
@@ -238,5 +243,9 @@ nmap <leader>t :TagbarToggle<CR>
 
 " syntastic ruby
 let g:syntastic_ruby_exec = '~/.rbenv/versions/2.2.3/bin/ruby'
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 set path+=**
