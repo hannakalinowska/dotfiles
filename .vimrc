@@ -39,7 +39,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mtth/scratch.vim'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Plugin 'rhysd/clever-f.vim'
 
 " the entire snipmate lot
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -161,7 +160,7 @@ nnoremap <leader>WM <C-w>_<C-w><Bar>
 nnoremap <leader>wm <C-w>=
 
 " Gundo
-nnoremap <leader>g :GundoToggle<CR>
+nnoremap <leader>g :GitGutterToggle<CR>
 
 " fold block - works best with matchit plugin
 nnoremap <leader>z zf%
@@ -171,9 +170,9 @@ cnoremap w!! %!sudo tee > /dev/null %
 
 " syntax highlighting
 au Bufread,BufNewFile *.feature set filetype=cucumber
-au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile set filetype=ruby
+au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile,clockworx_orange/**/*.wfm set filetype=ruby
 au BufRead,BufNewFile *.pp set filetype=puppet
-au BufRead,BufNewFile *.json set filetype=javascript
+au BufRead,BufNewFile */jsonschema/* set filetype=json
 
 au BufRead,BufNewFile */shunter-laserwolf/*,*/shunter-proxy/* set noexpandtab
 
@@ -247,10 +246,12 @@ nmap <leader>s :Sexplore
 nmap <leader>t :TagbarToggle<CR>
 
 " syntastic ruby
-let g:syntastic_ruby_exec = '~/.rbenv/versions/2.2.3/bin/ruby'
+let g:syntastic_ruby_exec = '~/.rbenv/versions/2.4.2/bin/ruby'
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 
 set path+=**
+
+set formatprg=mix\ format\ -
