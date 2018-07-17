@@ -235,6 +235,11 @@ map <leader>j :TmuxNavigateDown<CR>
 map <leader>h :TmuxNavigateLeft<CR>
 map <leader>l :TmuxNavigateRigh<CRt>
 
+map <C-Up> :TmuxNavigateUp<CR>
+map <C-Down> :TmuxNavigateDown<CR>
+map <C-Left> :TmuxNavigateLeft<CR>
+map <C-Right> :TmuxNavigateRight<CR>
+
 nmap <leader>e :Explore
 nmap <leader>v :Vexplore
 nmap <leader>s :Sexplore
