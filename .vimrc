@@ -170,7 +170,7 @@ cnoremap w!! %!sudo tee > /dev/null %
 
 " syntax highlighting
 au Bufread,BufNewFile *.feature set filetype=cucumber
-au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile,clockworx_orange/**/*.wfm set filetype=ruby
+au Bufread,BufNewFile Gemfile,Gemfile.lock,Procfile,Rakefile,*/clockworx_orange/*.wfm set filetype=ruby
 au BufRead,BufNewFile *.pp set filetype=puppet
 au BufRead,BufNewFile */jsonschema/* set filetype=json
 
