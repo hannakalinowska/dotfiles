@@ -10,3 +10,4 @@ vim +PluginInstall +qall
 
 brew install hub jq ack ctags
 brew install tree pstree
+brew install font-fira-code
