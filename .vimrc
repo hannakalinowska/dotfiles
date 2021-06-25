@@ -255,3 +255,5 @@ let g:lightline = {
 set path+=**
 
 set formatprg=mix\ format\ -
+
+let g:snipMate = { 'snippet_version' : 1 } " switching to new snipmate parser, whatever that means
