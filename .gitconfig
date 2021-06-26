@@ -6,7 +6,7 @@
   logt = log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"
 [user]
   name = Hanna Kalinowska
-  email = hanna.kalinowska@simplybusiness.co.uk
+  email = hanna.kalinowska@gmail.com
 [color]
   diff = auto
   status = auto
