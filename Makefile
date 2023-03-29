@@ -1,6 +1,8 @@
 install:
 	cp "$(CURDIR)/.ackrc" ~/.ackrc
+	cp "$(CURDIR)/.profile" ~/.profile
 	cp "$(CURDIR)/.bashrc" ~/.bashrc
+	cp "$(CURDIR)/.zshrc" ~/.zshrc
 	cp "$(CURDIR)/.ctags" ~/.ctags
 	cp "$(CURDIR)/.inputrc" ~/.inputrc
 	ln -s "$(CURDIR)/.gitconfig" ~/.gitconfig
@@ -21,7 +23,9 @@ clean:
 	rm -f ~/.gitconfig
 	rm -f ~/.inputrc
 	rm -f ~/.ctags
+	rm -f ~/.zshrc
 	rm -f ~/.bashrc
+	rm -f ~/.profile
 	rm -f ~/.ackrc
 
 vimsetup:

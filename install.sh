@@ -11,5 +11,10 @@ vim +PluginInstall +qall
 brew install hub jq ack ctags
 brew install tree pstree
 
-brew tap homebrew/cask-fonts
-brew install font-fira-code
+#brew tap homebrew/cask-fonts
+#brew install font-fira-code
+
+brew tap caskroom-fonts
+brew cask install font-fira-code
+
+brew install --cask rectangle # window management
